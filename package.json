@@ -1,6 +1,6 @@
 {
   "name": "narm",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple CLI tool to convert npm commands to yarn commands and vice versa",
   "main": "cli.js",
   "scripts": {
