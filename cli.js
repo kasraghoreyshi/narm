@@ -13,16 +13,11 @@ else
     "The given command doesn't belong to yarn/npm. Please try again."
   );
 console.log(`Executing "${command}"...`);
-exec(command, (error, stdout, stderr) => {
-  if (error) {
-    console.log(error.message);
-    return;
-  }
-  if (stderr) {
-    console.log(stderr);
-    return;
-  }
-  console.log(stdout);
+
+const commandProcess = exec(command);
+
+commandProcess.stdout.on("data", function (data) {
+  console.log(data);
 });
 
 // TODO refactor everything
