@@ -1,6 +1,6 @@
 {
   "name": "narm",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple CLI tool to convert npm commands to yarn commands and vice versa",
   "main": "cli.js",
   "scripts": {
@@ -18,5 +18,9 @@
   "license": "ISC",
   "bin": {
     "narm": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kasraghoreyshi/narm.git"
   }
 }
