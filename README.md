@@ -1,23 +1,42 @@
-**This package converts npm commands into yarn commands and vice versa. Meaning if you enter a npm command, this package will execute the yarn equivalent of it for you. **
 
-## Installation
+Narm converts npm commands into yarn commands and vice versa. Meaning if you enter a npm command, narm will execute the yarn equivalent of it for you. 
+
+## Getting Started
+
+### Installation
+
+Install narm globally using NPM:
 
 `npm install narm --global`
 
-## Usage
+or Yarn:
+`yarn global add narm`
 
-Let's say you want to install Tailwind using yarn. In the command line you can enter:
+## Usage and examples
 
-`narm npm install -D tailwindcss@latest postcss@latest autoprefixer@latest`
+For using Narm, simply add "narm" at the start of your command and narm will automatically convert and execute your command to yarn/npm.
 
-and Narm will execute the yarn equivalent for you; which in this case is:
+#### Example 1:
 
-`yarn add tailwindcss@latest postcss@latest autoprefixer@latest --dev`
+Input: `narm npm install -D tailwindcss@latest postcss@latest autoprefixer@latest`
 
-The same happens for converting yarn commands into npm commands. Let's say you want to install lodash using NPM. You can enter:
+Output: `yarn add tailwindcss@latest postcss@latest autoprefixer@latest --dev`
 
-`narm yarn add lodash`
+#### Example 2:
 
-and Narm will execute the NPM equivalent for you; which in this case is:
+Input: `narm yarn add lodash`
 
-`npm install lodash`
+Output: `npm install lodash`
+
+## Find any bugs/issues?
+
+If you encountered any issues or bugs while using narm, please make sure to open a new issue.
+
+## Contribution
+
+Contributions to narm are greatly appreciated. To contribute:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
