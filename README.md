@@ -1,6 +1,8 @@
 
 Narm converts npm commands into yarn commands and vice versa. Meaning if you enter a npm command, narm will execute the yarn equivalent of it for you. 
 
+If you are enjoying narm, giving it a star would be highly appreciated!
+
 ## Getting Started
 
 ### Installation
