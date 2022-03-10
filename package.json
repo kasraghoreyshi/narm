@@ -1,23 +1,34 @@
 {
   "name": "narm",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Simple CLI tool to convert npm commands to yarn commands and vice versa",
-  "main": "cli.js",
+  "main": "build/src/cli/cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
-  "keywords": [
-    "npm",
-    "yarn",
-    "package manager convert",
-    "convert",
-    "npm to yarn",
-    "yarn to npm"
-  ],
+  "keywords": [],
   "author": "Kasra Ghoreyshi",
   "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/yargs": "^17.0.9",
+    "ava": "^4.1.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
   "bin": {
-    "narm": "./cli.js"
+    "narm": "./build/src/cli/cli.js"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
   },
   "repository": {
     "type": "git",
