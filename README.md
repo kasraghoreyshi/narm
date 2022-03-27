@@ -1,7 +1,6 @@
+Narm converts npm commands into yarn commands and vice versa. Meaning if you enter a npm command, narm will execute the yarn equivalent of it for you.
 
-Narm converts npm commands into yarn commands and vice versa. Meaning if you enter a npm command, narm will execute the yarn equivalent of it for you. 
-
-If you are enjoying narm, giving it a star would be highly appreciated!
+> If you are enjoying narm, giving it a star would be highly appreciated!
 
 ## Getting Started
 
@@ -37,6 +36,7 @@ If you encountered any issues or bugs while using narm, please make sure to open
 ## Contribution
 
 Contributions to narm are greatly appreciated. To contribute:
+
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
